@@ -1,0 +1,31 @@
+Functional Requirements
+        Introduction
+                Visual Effects
+                Geographical Description
+        
+        Enter Virtual Tour
+                Navigation
+                        Walking 
+                        Teleportation
+
+                Location Awareness
+                        Create Mini Map
+                        Update Mini Map
+
+                Multimedia Controller
+                        Location Differentiator
+                        Activate Important Location Multimedia
+                        Activate Unimportant Location Multimedia
+
+                Multimedia Management
+                        Video Management
+                                        Start Video
+                                        Skip Video
+                        Audio Management
+                                        Enable Audio
+                                        Disable Audio
+                        Dialog Box Management
+                                        Popup Dialog Box
+                                        Close Dialog Box
+                
+        Exit Virtual Tour

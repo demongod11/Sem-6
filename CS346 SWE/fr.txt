@@ -1,0 +1,103 @@
+R1 Introduction
+Input:  Location name
+Output: Map
+DESC: it shows the map of that location
+
+R1.1 Visual Effects
+Input:  Input keys
+Output: Visual Effects
+DESC:   Displays visual effects such as globe rotation and geographical zoom-in when triggered by the user using input keys (Ex. Enter key) 
+
+R1.2  Geographical Description
+Input:  
+Output:
+DESC:
+
+R2 Enter Visual Tour
+Input:  Location Landmark
+Output: VR Tour
+DESC:   Starting the visual tour based on the input location landmark
+
+R2.1 Navigation
+Input:  Location / Analog Stick
+Output: 3D-view 
+
+R2.1.1 Walking
+Input:  Joystick analog stick
+Output: 3D-view
+DESC:   3D-view of stepwise movement of the user
+
+R2.1.2 Teleportation
+Input:  Location
+Output: 3D-view
+DESC:   Loading the 3D-view of the teleported location
+
+R2.2 Location Awareness
+Input:  Location
+Output: Mini Map
+
+R2.2.1 Create Mini Map
+Input:  Location Landmark
+Output: Mini Map
+DESC:   Creating a mini map of the chosen landmark
+
+R2.2.2  Update Mini Map
+Input:  Location
+Output: Mini Map
+DESC:   Displaying the real-time tracking of user's location
+
+R2.3 Multimedia Controller
+Input:  Location
+Output: Multimedia / Choice Popup
+DESC:   Automatically triggering multimedia if the place is special/important,
+        else giving the user a choice for showing multimedia
+
+R2.3.1 Location Differentiator
+Input:  Location
+Output: Location Importance
+DESC:   Deciding whether a location is important
+
+R2.3.2 Activate Important Location Multimedia
+Input: Important Location
+Output: Multimedia
+DESC: Automatically triggers the multimedia of the location (audio/video/text description) 
+
+R2.3.3 Activate Unimportant Location Multimedia
+Input: Unimportant Location
+Output: Choice Popup
+DESC: Gives user a choice whether to activate multimedia or not
+
+R2.4 Multimedia Management
+Input: location
+Output: multimedia
+DESC:management of video,audio,text for that location
+
+R2.4.1 start video
+Input:location
+output: video
+DESC: plays the video of corresponding location
+
+R2.4.2 skip video
+Input: video
+Output: 3D-view of that location
+DESC: it skip the the video of location Description
+
+R2.4.3 enable audio
+Input: location/video
+Qutput: Audio
+DESC: enables audio for the corresponding location (ot) video
+
+R2.4.4 disable audio
+Input: videos/location
+Qutput:silence
+DESC: disables the audio of video (or) audio of certain location
+
+R2.4.5 Popup Dialog Box
+Input: Location
+Output: Dialog Box
+DESC: popup of the dialog box it shows the information of that location 
+
+R2.4.6 close Dialog Box
+Input:Dialog Box
+Output: 3D-view
+DESC: it closes the Dialog Box and return to normal 3D view of that location
