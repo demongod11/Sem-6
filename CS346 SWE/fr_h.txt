@@ -1,22 +1,23 @@
 Functional Requirements
-        Introduction
-                Visual Effects
-                Geographical Description
+        Start Virtual Tour
+                Start Intro
+                Skip Intro
         
-        Enter Virtual Tour
+        Start Island Virtual Tour
                 Navigation
-                        Walking 
+                        Locomotion
                         Teleportation
 
                 Location Awareness
                         Create Mini Map
                         Update Mini Map
 
-                Multimedia Controller
-                        Location Differentiator
-                        Activate Important Location Multimedia
-                        Activate Unimportant Location Multimedia
+                Location Differentiator
 
+                Multimedia Controller
+                        Activate IMP Location Multimedia
+                        Activate UNIMP Location Multimedia
+                                        
                 Multimedia Management
                         Video Management
                                         Start Video
