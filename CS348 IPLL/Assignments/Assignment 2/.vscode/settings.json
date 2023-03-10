@@ -6,6 +6,8 @@
         "xutility": "cpp",
         "initializer_list": "cpp",
         "type_traits": "cpp",
-        "xtree": "cpp"
+        "xtree": "cpp",
+        "unordered_map": "cpp",
+        "utility.c": "cpp"
     }
 }
