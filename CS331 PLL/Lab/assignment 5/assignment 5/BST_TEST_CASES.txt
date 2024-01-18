@@ -1,0 +1,74 @@
+test case 1:
+
+insert--> 20 11 8 9 15 16 19 24 25 27 32 30 22
+
+search--> 27
+ 
+search--> 54
+
+delete--> 24
+
+delete--> 67
+
+split--> k=27
+
+inorder successor of --> 15 24 
+
+elementsBetween k1=9 ,k2=27
+
+kth largest element--> k=4
+
+
+
+
+test case 2:
+
+insert--> 21 12 7 9 7 15 
+
+search--> 27
+
+insert--> 16 15 
+
+delte--> 16 
+
+insert--> 19 24 25 27 
+
+delete--> 47
+
+insert--> 32 30 23 23 
+
+search--> 54
+
+delete--> 24
+
+delete--> 23
+
+split--> k=19
+
+inorder successor of --> 15 25
+
+elementsBetween k1=10 ,k2=31
+
+kth largest element--> k=5
+
+
+
+test case 3:
+
+insert-->45 15 10 20 79 56 65 52 59
+
+search--> 56 
+
+search--> 98
+
+delete--> 20
+
+delete--> 97
+
+split--> k=56
+
+inorder successor of --> 79
+
+elementsBetween k1=14 ,k2=60
+
+kth largest element--> k=3

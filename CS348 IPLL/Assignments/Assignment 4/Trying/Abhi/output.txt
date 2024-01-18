@@ -1,0 +1,113 @@
+type_specifier <- INT
+declaration_specifiers_opt <- epsilon
+declaration_specifiers <- type_specifier declaration_specifiers_opt
+pointer_opt <- epsilon
+direct_declarator <- IDENTIFIER
+declarator <- pointer_opt direct_declarator
+constant <- INTEGER_CONSTANT
+primary_expression <- constant
+postfix_expression <- primary_expression
+unary_expression <- postfix_expression
+cast_expression <- unary_expression
+multiplicative_expression <- cast_expression
+additive_expression <- multiplicative_expression
+shift_expression <- additive_expression
+relational_expression <- shift_expression
+equality_expression <- relational_expression
+and_expression <- equality_expression
+exclusive_or_expression <- and_expression
+inclusive_or_expression <- exclusive_or_expression
+logical_and_expression <- inclusive_or_expression
+logical_or_expression <- logical_and_expression
+conditional_expression <- logical_or_expression
+assignment_expression <- conditional_expression
+initializer <- assignment_expression
+init_declarator <- declarator = initializer
+init_declarator_list <- init_declarator
+init_declarator_list_opt <- init_declarator_list
+declaration <- declaration_specifiers init_declarator_list_opt ;
+external_declaration <- declaration
+translation_unit <- external_declaration
+type_specifier <- INT
+declaration_specifiers_opt <- epsilon
+declaration_specifiers <- type_specifier declaration_specifiers_opt
+pointer_opt <- epsilon
+direct_declarator <- IDENTIFIER
+declarator <- pointer_opt direct_declarator
+constant <- INTEGER_CONSTANT
+primary_expression <- constant
+postfix_expression <- primary_expression
+unary_expression <- postfix_expression
+cast_expression <- unary_expression
+multiplicative_expression <- cast_expression
+additive_expression <- multiplicative_expression
+shift_expression <- additive_expression
+relational_expression <- shift_expression
+equality_expression <- relational_expression
+and_expression <- equality_expression
+exclusive_or_expression <- and_expression
+inclusive_or_expression <- exclusive_or_expression
+logical_and_expression <- inclusive_or_expression
+logical_or_expression <- logical_and_expression
+conditional_expression <- logical_or_expression
+assignment_expression <- conditional_expression
+initializer <- assignment_expression
+init_declarator <- declarator = initializer
+init_declarator_list <- init_declarator
+init_declarator_list_opt <- init_declarator_list
+declaration <- declaration_specifiers init_declarator_list_opt ;
+external_declaration <- declaration
+translation_unit <- translation_unit external_declaration
+type_specifier <- INT
+declaration_specifiers_opt <- epsilon
+declaration_specifiers <- type_specifier declaration_specifiers_opt
+pointer_opt <- epsilon
+direct_declarator <- IDENTIFIER
+declarator <- pointer_opt direct_declarator
+primary_expression <- INDENTIFIER
+postfix_expression <- primary_expression
+unary_expression <- postfix_expression
+cast_expression <- unary_expression
+multiplicative_expression <- cast_expression
+additive_expression <- multiplicative_expression
+constant <- INTEGER_CONSTANT
+primary_expression <- constant
+postfix_expression <- primary_expression
+unary_expression <- postfix_expression
+cast_expression <- unary_expression
+multiplicative_expression <- cast_expression
+additive_expression <- additive_expression - multiplicative_expression
+shift_expression <- additive_expression
+relational_expression <- shift_expression
+equality_expression <- relational_expression
+and_expression <- equality_expression
+exclusive_or_expression <- and_expression
+inclusive_or_expression <- exclusive_or_expression
+logical_and_expression <- inclusive_or_expression
+logical_or_expression <- logical_and_expression
+conditional_expression <- logical_or_expression
+assignment_expression <- conditional_expression
+initializer <- assignment_expression
+init_declarator <- declarator = initializer
+init_declarator_list <- init_declarator
+init_declarator_list_opt <- init_declarator_list
+declaration <- declaration_specifiers init_declarator_list_opt ;
+external_declaration <- declaration
+translation_unit <- translation_unit external_declaration
+type_specifier <- INT
+declaration_specifiers_opt <- epsilon
+declaration_specifiers <- type_specifier declaration_specifiers_opt
+pointer_opt <- epsilon
+direct_declarator <- IDENTIFIER
+identifier_list_opt <- epsilon
+direct_declarator <- direct_declarator ( identifier_list_opt )
+declarator <- pointer_opt direct_declarator
+declaration_list_opt <- epsilon
+block_item_list_opt <- epsilon
+compound_statement <- { block_item_list_opt }
+function_definition <- declaration_specifiers declarator declaration_list_opt compound_statement
+external_declaration <- function_definition
+translation_unit <- translation_unit external_declaration
+
+
+SUCCESS

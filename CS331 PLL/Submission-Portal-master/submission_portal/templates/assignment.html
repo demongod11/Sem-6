@@ -1,0 +1,92 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    {% comment %} <link rel="stylesheet" href="{% static 'hab_portal/styles.css' %}"> {% endcomment %}
+    <style>
+        .::after {
+            content: "*";
+            color: red;
+        }
+    </style>
+
+    <title>Add Assignment Form</title>
+
+</head>
+<body style="background-color:#f0f8ff;">
+
+
+    <div class="container-fluid" style="max-width: 70% ; margin-top:60px">
+
+<div class="container">
+    <div class="rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md" style="background: #1E5AD1; color:white;">
+      <div class="flex">
+
+        <svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 0C2.51472 0 0.5 2.01472 0.5 4.5V13.9C0.5 14.8797 1.12611 15.7131 2 16.022V4.5C2 2.84315 3.34315 1.5 5 1.5H10.002C9.69309 0.626106 8.85967 0 7.88 0H5Z" fill="white"/>
+<path d="M3 4.75C3 3.50736 4.00736 2.5 5.25 2.5H11V0.75C11 0.335787 11.3358 0 11.75 0C12.1642 0 12.5 0.335787 12.5 0.75V19.25C12.5 19.6642 12.1642 20 11.75 20C11.3358 20 11 19.6642 11 19.25V18H5.25C4.00736 18 3 16.9926 3 15.75V4.75Z" fill="white"/>
+</svg>
+
+
+
+<p style="padding-left:20px; padding-right:50%"><b> Add Assignment</b></p>
+
+
+</div>
+</div>
+<br>
+<form action="../{{ url }}/" method="POST" enctype="multipart/form-data" >
+
+      <div class=" bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
+
+         {% csrf_token %}
+
+            <div class="relative mb-4 form-group">
+                <label for="Assignment Name" class="leading-7 required-field text-Black-600">Assignment Name</label><br>
+                    {{ form.assignment_name }}
+            </div>
+
+            <div class="relative mb-4 form-group">
+                <label for="Description" class="leading-7 text-Black-600">Description</label><br>
+                    {{ form.description }}
+            </div>
+
+            <div class="relative mb-4 form-group">
+                <label for="Deadline" class="leading-7 text-Black-600">Deadline</label><br>
+                    {{ form.deadline }}
+            </div>
+
+            <div class="relative mb-4 form-group">
+                <label for="Maximum Marks" class="leading-7 text-Black-600">Maximum Marks</label><br>
+                    {{ form.max_marks }}
+            </div>
+
+
+            <div class="relative mb-4 form-group">
+                <label for="Upload Assignment File" class="leading-7 text-Black-600">Upload Assignment File</label>
+                <svg width="872" height="4" viewBox="0 0 872 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="0.998611" y1="2.91944" x2="871.995" y2="0.5" stroke="#E9E9EB"/>
+                </svg>
+                {{ form.assignment_file }}
+            </div>
+
+            <input  id="but1" type="submit" class="btn btn-primary btn-lg text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text" style="max-width:30%;"{% if locked %}disabled{% endif %} value="Submit">
+
+  </div>
+</div>
+<br>
+<br>
+<br>
+</form>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script scr="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+</body>
+</html>

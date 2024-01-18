@@ -1,0 +1,39 @@
+Testcase 1:
+
+Array: -1 -2 -8 -6 -2 -4 -3 -5 -20 -2 -5
+
+Query: 3 4 -22
+
+Ans: 0
+
+Testcase 2:
+
+Array: -1 -2 -8 -6 -2 -4 -3 -5 -20 -2 -5
+
+Query: 5 11 -1
+
+Ans: 7
+
+Testcase 3:
+
+Array: 1 1 1 1 1 1 1 1
+
+Query: 1 1 2
+
+Ans: 1
+
+Testcase 4:
+
+Array: 1 1 1 1 1 1 1 1
+
+Query: 1 1 0
+
+Ans: 0
+
+Testcase 5:
+
+Array: 4
+
+Query: 1 1 5
+
+Ans: 1

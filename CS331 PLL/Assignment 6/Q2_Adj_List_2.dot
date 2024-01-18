@@ -1,0 +1,37 @@
+digraph G{
+  rankdir = "LR"
+  node [shape = record]
+  gph [label = "<f0> 0 |<f1> 1 |<f2> 2 |<f3> 3 |<f4> 4 "]
+  gph00 [label = "{ 1 | 2 | }"]
+  gph01 [label = "{ 2 | 5 | }"]
+  gph02 [label = "{ 3 | 1 | }"]
+  gph03 [label = "{ 4 | 3 | }"]
+  gph10 [label = "{ 0 | 2 | }"]
+  gph11 [label = "{ 2 | 4 | }"]
+  gph20 [label = "{ 0 | 5 | }"]
+  gph21 [label = "{ 1 | 4 | }"]
+  gph22 [label = "{ 3 | 5 | }"]
+  gph23 [label = "{ 4 | 4 | }"]
+  gph30 [label = "{ 0 | 1 | }"]
+  gph31 [label = "{ 2 | 5 | }"]
+  gph32 [label = "{ 4 | 6 | }"]
+  gph40 [label = "{ 0 | 3 | }"]
+  gph41 [label = "{ 2 | 4 | }"]
+  gph42 [label = "{ 3 | 6 | }"]
+  gph:f0 -> gph00
+  gph00 -> gph01
+  gph01 -> gph02
+  gph02 -> gph03
+  gph:f1 -> gph10
+  gph10 -> gph11
+  gph:f2 -> gph20
+  gph20 -> gph21
+  gph21 -> gph22
+  gph22 -> gph23
+  gph:f3 -> gph30
+  gph30 -> gph31
+  gph31 -> gph32
+  gph:f4 -> gph40
+  gph40 -> gph41
+  gph41 -> gph42
+}

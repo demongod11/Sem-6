@@ -1,0 +1,2 @@
+{SINGLE_COMMENT}    { printf("Single Line Comment at %d\n", ++lineNum);}
+{MULTI_COMMENT}     { printf("Multi Line Comment at %d\n", ++lineNum);}

@@ -1,0 +1,31 @@
+a)
+Insertion:
+Test case 1: Insert 5 into an empty tree. Verify that the root node's min and max values are both 5.
+Test case 2: Insert 5, 2, 7, 2, 5, 4, and 9 into the tree. Verify that the tree contains all these elements in the correct positions.
+Test case 3: Insert 3 into the tree twice. Verify that the tree structure is not modified and that the second insert returns false
+
+Deletion:
+Test case 1: Delete 5 from a tree with only one node. Verify that the node becomes empty.
+Test case 2: Delete 7 from the tree from Test case 2. Verify that the element is removed, and the tree structure is updated correctly.
+Test case 3: Attempt to delete 8 from the tree from Test case 2. Verify that the tree structure is not modified, and the delete operation returns false.
+Successor:
+Test case 1: Find the successor of 2 in the tree from Test case 2. Verify that the correct result is 4.
+Test case 2: Find the successor of 5 in the tree from Test case 2. Verify that the correct result is 7.
+Test case 3: Attempt to find the successor of 10 in the tree from Test case 2. Verify that the correct result is null.
+Predecessor:
+Test case 1: Find the predecessor of 9 in the tree from Test case 2. Verify that the correct result is 7.
+Test case 2: Find the predecessor of 5 in the tree from Test case 2. Verify that the correct result is 4.
+Test case 3: Attempt to find the predecessor of 1 in the tree from Test case 2. Verify that the correct result is null.
+
+b) 
+Insertion:
+Test case 1: Insert 2^k - 1, 2^(k-1) - 1, ..., 3, 1 into the tree, where k is the maximum number of bits allowed in the tree. Verify that the tree contains all these elements in the correct positions.
+Test case 2: Insert all the odd numbers from 1 to 2^k - 1, followed by all the even numbers from 2 to 2^k - 2, into the tree. Verify that the tree structure is still correct.
+Deletion:
+Test case 1: Delete the minimum and maximum values from the tree, one at a time, starting with the maximum value. Verify that the tree structure is updated correctly after each delete.
+Test case 2: Attempt to delete elements that do not exist in the tree, such as negative values or values greater than 2^k - 1. Verify that the tree structure is not modified.
+Successor:
+Test case 1: Find the successor of a value that is not in the tree, but is between two values in the tree, such as 2^k - 2 and 2^k - 1. Verify that the correct result is returned.
+Predecessor:
+
+Test case 1: Find the predecessor of a value that is not in the tree, but is between two values in the tree, such as 2^(k-1) and 2^k - 1. Verify that the correct result is returned.

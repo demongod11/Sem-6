@@ -1,0 +1,8 @@
+Initial array : 1 2 3 4 5
+
+reader 0 is reading : The array is 1 2 3 4 5
+reader 1 is reading : The array is 1 2 3 4 5
+writer 0 is writing : The array is 2 4 6 8 10  // each element multiplied by 2
+reader 2 is reading : The array is 2 4 6 8 10
+writer 1 is writing : The array is 4 8 12 16 20 // each element multiplied by 2
+reader 3 is reading : The array is 4 8 12 16 20

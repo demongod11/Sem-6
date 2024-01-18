@@ -1,0 +1,11 @@
+graph G{
+  rankdir = "LR"
+  0 -- 1 [label = 2 color = "red"]
+  0 -- 2 [label = 5]
+  0 -- 3 [label = 1 color = "red"]
+  0 -- 4 [label = 3 color = "red"]
+  1 -- 2 [label = 4 color = "red"]
+  2 -- 3 [label = 5]
+  2 -- 4 [label = 4]
+  3 -- 4 [label = 6]
+}

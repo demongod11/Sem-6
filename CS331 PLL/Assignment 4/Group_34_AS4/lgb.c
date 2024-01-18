@@ -65,7 +65,7 @@ double kmeans(double** data, double** centroids, int m, double a, int no_iter, i
         double temp = (d_old - d_new)/d_new;
         d_old=d_new;
         d_new=0;
-        if(temp <= a){
+        if(temp < a){
             printf("Converging after %d iterations ", iter+1);
             break;
         }

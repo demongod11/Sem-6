@@ -1,0 +1,27 @@
+test case 1:
+
+1.Insert the following numbers in the order given: 50, 30, 20, 40, 70, 60, 80, 10
+2.Visualize the AVL tree that is created after all insertions are complete
+3.Search for the following numbers: 20, 70, 100
+4.Delete the following numbers in the order given: 20, 30, 50, 70
+5.Visualize the AVL tree that is created after all deletions are complete
+6.Find the successor and predecessor of the following numbers: 40, 60, 80, 100
+
+test case 2:
+
+1.Insert the following numbers in the order given: 15, 10, 20, 8, 12, 17, 25
+2.Visualize the AVL tree that is created after all insertions are complete
+3.Search for the following numbers: 10, 17, 30
+4.Delete the following numbers in the order given: 20, 10, 25, 8
+5.Visualize the AVL tree that is created after all deletions are complete
+6.Find the successor and predecessor of the following numbers: 12, 17, 30
+
+
+Test Case 3:
+
+1.Insert the following numbers in the order given: 50, 30, 20, 40, 70, 60, 80, 45, 65, 55, 75, 90
+2.Visualize the AVL tree that is created after all insertions are complete
+3.Search for the following numbers: 20, 70, 100
+4.Delete the following numbers in the order given: 50, 20, 65, 80
+5.Visualize the AVL tree that is created after all deletions are complete
+6.Find the successor and predecessor of the following numbers: 45, 60, 90
